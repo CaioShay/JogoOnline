@@ -11,7 +11,10 @@ const wss = new ws.Server(
         port:3000
     }
 )
-console.log('server aberto')
+
+wss.on('listening',()=>{
+    console.log('server aberto em:',wss.address())
+})
 
 wss.on('connection',(ws)=>{
     ws.id = next_id
