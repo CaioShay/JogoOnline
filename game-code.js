@@ -5,7 +5,7 @@ try {
     let players = []
 }catch(error){
     alert(error)
-}a
+}
 
 socket.addEventListener("open", () => {
     console.log("Conectado!");
