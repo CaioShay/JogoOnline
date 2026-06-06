@@ -1,8 +1,9 @@
 const ip = prompt('Digite o ip: ')
+let players = []
 
 try {
     var socket = new WebSocket(`ws://${ip}:3000`)
-    let players = []
+    
 }catch(error){
     alert(error)
 }
