@@ -1,3 +1,7 @@
+window.onerror = (msg, url, line, col) => {
+  alert(`${msg}\n${line}:${col}`);
+};
+
 const ip = prompt('Digite o ip: ')
 let players = []
 
