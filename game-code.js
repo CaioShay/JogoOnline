@@ -1,12 +1,7 @@
-window.onerror = (msg, url, line, col) => {
-  alert(`${msg}\n${line}:${col}`);
-};
-
-const ip = prompt('Digite o ip: ')
 let players = []
 
 try {
-    var socket = new WebSocket(`ws://${ip}:3000`)
+    var socket = new WebSocket(`ws://caio.serveousercontent.com:3000`)
     
 }catch(error){
     alert(error)

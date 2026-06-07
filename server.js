@@ -47,6 +47,7 @@ wss.on('connection',(ws)=>{
 
 const fps = 24
 const Delta_Time = 1000/fps
+
 setInterval(()=>{
     const snapshot = {players:{}}
 
