@@ -1,11 +1,6 @@
 let players = []
 
-try {
-    var socket = new WebSocket(`wss://caio.serveousercontent.com:3000`)
-    
-}catch(error){
-    alert(error)
-}
+const socket = new WebSocket(`wss://caio.serveousercontent.com`)
 
 socket.addEventListener("open", () => {
     console.log("Conectado!");

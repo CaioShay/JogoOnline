@@ -7,7 +7,7 @@ let next_id = 1
 
 const wss = new ws.Server(
     {   
-        host:'0.0.0.0',
+        host:'localhost',
         port:3000
     }
 )
